@@ -1,0 +1,36 @@
+{
+  "skills": [
+    {
+      "name": "awesome-claude-skills",
+      "description": "Comprehensive collection of 78+ practical Claude Skills for document processing, development tools, data analysis, marketing automation, and SaaS integrations",
+      "source": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "enabled": true
+    },
+    {
+      "name": "superpowers",
+      "description": "Agentic skills framework for structured software development methodology with design specifications, test-driven development, and code review processes",
+      "source": "https://github.com/obra/superpowers",
+      "enabled": true
+    },
+    {
+      "name": "anthropic-skills",
+      "description": "Official Anthropic repository with example skills, specifications, templates, and production-grade document handling skills (DOCX, PDF, PPTX, XLSX)",
+      "source": "https://github.com/anthropics/skills",
+      "enabled": true
+    },
+    {
+      "name": "notebooklm-skill",
+      "description": "Enables Claude Code to query Google NotebookLM notebooks with source-grounded, citation-backed answers from Gemini",
+      "source": "https://github.com/PleasePrompto/notebooklm-skill",
+      "enabled": true,
+      "note": "Works only with local Claude Code installations, not in web UI"
+    },
+    {
+      "name": "marketing-skills",
+      "description": "45+ specialized marketing skills for conversion optimization, content & copy, SEO, paid advertising, analytics, retention, growth engineering, and strategy",
+      "source": "https://github.com/coreyhaines31/marketingskills",
+      "enabled": true
+    }
+  ],
+  "defaultSkill": "awesome-claude-skills"
+}
