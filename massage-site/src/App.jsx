@@ -11,12 +11,19 @@ function App() {
   const [images, setImages] = useState([])
 
   const services = [
+    // Massage Services
     { name: 'Thai Traditional Massage', price: '600฿', duration: '60 min' },
     { name: 'Oil Massage', price: '700฿', duration: '60 min' },
     { name: 'Hot Stone Therapy', price: '800฿', duration: '90 min' },
     { name: 'Herbal Compress Massage', price: '750฿', duration: '60 min' },
     { name: 'Foot Reflexology', price: '500฿', duration: '60 min' },
-    { name: 'Couples Package', price: '1,400฿', duration: '60 min' },
+    { name: 'Couples Massage', price: '1,400฿', duration: '60 min' },
+    // Nail Services
+    { name: 'Classic Manicure', price: '400฿', duration: '45 min' },
+    { name: 'Gel Manicure', price: '600฿', duration: '60 min' },
+    { name: 'Nail Art Design', price: '700฿', duration: '90 min' },
+    { name: 'Pedicure', price: '500฿', duration: '60 min' },
+    { name: 'Luxury Crystal Nails', price: '900฿', duration: '90 min' },
   ]
 
   const handleBookingChange = (e) => {
@@ -51,7 +58,7 @@ function App() {
       {/* Navigation */}
       <nav className="bg-emerald border-b-2 border-gold sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <h1 className="text-3xl font-bold text-gold">Thai Bliss Massage</h1>
+          <h1 className="text-3xl font-bold text-gold">Kanya Nail Spa</h1>
           <ul className="flex gap-8">
             <li><a href="#services" className="text-light-gold hover:text-gold transition">Services</a></li>
             <li><a href="#gallery" className="text-light-gold hover:text-gold transition">Gallery</a></li>
@@ -63,9 +70,9 @@ function App() {
 
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-emerald to-dark-green py-20 text-center">
-        <h2 className="text-6xl font-bold text-gold mb-4">Experience Luxury Thai Massage</h2>
+        <h2 className="text-6xl font-bold text-gold mb-4">Kanya Massage & Nail Spa</h2>
         <p className="text-xl text-light-gold mb-8 max-w-2xl mx-auto">
-          Discover authentic Thai massage therapy in a luxurious setting. Relax, rejuvenate, and restore your body and mind.
+          Experience luxury Thai massage and premium nail art in a serene setting. Relax, rejuvenate, and indulge yourself.
         </p>
         <a href="#booking" className="luxury-button">Book Your Session</a>
       </section>
@@ -177,7 +184,7 @@ function App() {
           </form>
           <div className="mt-8 text-center">
             <p className="text-light-gold mb-4">Or book directly:</p>
-            <a href="tel:+66812345678" className="text-gold text-lg font-bold">📞 +66 (0) 812-345-678</a>
+            <a href="tel:+66821279607" className="text-gold text-lg font-bold">📞 +66 (0) 82-1279607</a>
           </div>
         </div>
       </section>
@@ -263,7 +270,7 @@ function App() {
             </div>
           </div>
           <div className="text-center mt-8 pt-8 border-t border-gold border-opacity-30">
-            <p className="text-light-gold">© 2025 Thai Bliss Massage. All rights reserved.</p>
+            <p className="text-light-gold">© 2025 Kanya Nail Spa. All rights reserved.</p>
           </div>
         </div>
       </footer>
