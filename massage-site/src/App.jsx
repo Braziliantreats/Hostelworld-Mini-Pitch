@@ -35,6 +35,17 @@ function App() {
     setNewReview({ name: '', text: '', rating: 5 })
   }
 
+  const handleImageUpload = (e) => {
+    const files = Array.from(e.target.files)
+    files.forEach(file => {
+      const reader = new FileReader()
+      reader.onload = (event) => {
+        setImages([...images, event.target.result])
+      }
+      reader.readAsDataURL(file)
+    })
+  }
+
   return (
     <div className="min-h-screen bg-dark-green text-white">
       {/* Navigation */}
@@ -79,9 +90,26 @@ function App() {
       <section id="gallery" className="py-20 px-6 bg-emerald">
         <div className="max-w-6xl mx-auto">
           <h2 className="section-title">Gallery</h2>
+
+          {/* Image Upload Form */}
+          <div className="max-w-2xl mx-auto mb-12 text-center">
+            <label className="card cursor-pointer hover:shadow-xl transition-shadow">
+              <p className="text-light-gold text-lg mb-4">📸 Upload Photos</p>
+              <input
+                type="file"
+                multiple
+                accept="image/*"
+                onChange={handleImageUpload}
+                className="hidden"
+              />
+              <p className="text-sm text-light-gold opacity-75">Click to select up to 5 images</p>
+            </label>
+          </div>
+
+          {/* Display Images */}
           {images.length === 0 ? (
             <div className="text-center py-12">
-              <p className="text-light-gold text-xl">Images coming soon...</p>
+              <p className="text-light-gold text-xl">Upload your photos above...</p>
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
