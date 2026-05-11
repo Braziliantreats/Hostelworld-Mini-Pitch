@@ -10,7 +10,7 @@
     }
   },
   "airports": {
-    "departure": ["BOS", "MHT"],
+    "departure": ["BOS", "MHT", "JFK", "LGA"],
     "regions": {
       "Vietnam": {
         "destinations": [
