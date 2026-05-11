@@ -1,0 +1,97 @@
+name: Flight Deal Tracker
+
+on:
+  schedule:
+    # Run every 4 hours
+    - cron: '0 */4 * * *'
+  workflow_dispatch:
+    # Allow manual trigger
+
+jobs:
+  track-flights:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Create .env file
+        run: |
+          cat > .env << EOF
+          AMADEUS_CLIENT_ID=${{ secrets.AMADEUS_CLIENT_ID }}
+          AMADEUS_CLIENT_SECRET=${{ secrets.AMADEUS_CLIENT_SECRET }}
+          KIWI_API_KEY=${{ secrets.KIWI_API_KEY }}
+          EMAIL_USER=${{ secrets.EMAIL_USER }}
+          EMAIL_PASSWORD=${{ secrets.EMAIL_PASSWORD }}
+          EMAIL_RECIPIENT=${{ secrets.EMAIL_RECIPIENT || secrets.EMAIL_USER }}
+          DEBUG=false
+          EOF
+
+      - name: Run flight tracker
+        run: npm start
+        continue-on-error: true
+
+      - name: Generate reports and dashboard
+        run: |
+          npm run build-dashboard
+
+      - name: Commit database and reports
+        run: |
+          git config user.name "Flight Tracker Bot"
+          git config user.email "bot@flighttracker.local"
+
+          git add data/flights.db || true
+          git add reports/ || true
+          git add docs/ || true
+
+          git diff --quiet && git diff --staged --quiet || git commit -m "🤖 Update flight prices and dashboard - $(date -u +'%Y-%m-%d %H:%M UTC')"
+
+      - name: Push changes
+        run: |
+          git push origin claude/flight-deal-tracker-Dq829 || true
+
+      - name: Setup Pages
+        if: always()
+        uses: actions/configure-pages@v4
+
+      - name: Upload Pages artifact
+        if: always()
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './docs'
+
+      - name: Deploy to Pages
+        if: always()
+        id: deployment
+        uses: actions/deploy-pages@v2
+
+    timeout-minutes: 30
+
+  cleanup:
+    runs-on: ubuntu-latest
+    if: always()
+    needs: track-flights
+    steps:
+      - name: Clear API keys from memory
+        run: |
+          unset AMADEUS_CLIENT_ID
+          unset AMADEUS_CLIENT_SECRET
+          unset KIWI_API_KEY
+          unset EMAIL_USER
+          unset EMAIL_PASSWORD

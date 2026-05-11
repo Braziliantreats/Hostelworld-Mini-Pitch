@@ -1,0 +1,91 @@
+{
+  "trip": {
+    "name": "International Trip June 2026",
+    "departureDate": "2026-06-14",
+    "returnDate": "2026-06-28",
+    "passengers": 2,
+    "checkDates": {
+      "departure": ["2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16"],
+      "return": ["2026-06-26", "2026-06-27", "2026-06-28", "2026-06-29", "2026-06-30"]
+    }
+  },
+  "airports": {
+    "departure": ["BOS", "MHT"],
+    "regions": {
+      "Vietnam": {
+        "destinations": [
+          { "code": "SGN", "city": "Ho Chi Minh City", "targetPrice": 1100 },
+          { "code": "HAN", "city": "Hanoi", "targetPrice": 1100 },
+          { "code": "DAD", "city": "Da Nang", "targetPrice": 1100 }
+        ]
+      },
+      "Brazil": {
+        "destinations": [
+          { "code": "GIG", "city": "Rio de Janeiro", "targetPrice": 650 },
+          { "code": "GRU", "city": "São Paulo", "targetPrice": 600 },
+          { "code": "SSA", "city": "Salvador", "targetPrice": 750 },
+          { "code": "REC", "city": "Recife", "targetPrice": 750 }
+        ]
+      },
+      "Southeast Asia": {
+        "destinations": [
+          { "code": "BKK", "city": "Bangkok, Thailand", "targetPrice": 1000 },
+          { "code": "REP", "city": "Siem Reap, Cambodia", "targetPrice": 1100 },
+          { "code": "DPS", "city": "Bali, Indonesia", "targetPrice": 1100 },
+          { "code": "MNL", "city": "Manila, Philippines", "targetPrice": 900 },
+          { "code": "KUL", "city": "Kuala Lumpur, Malaysia", "targetPrice": 1000 }
+        ],
+        "openJaw": {
+          "departure": "SGN",
+          "return": "BKK",
+          "targetPrice": 1050
+        }
+      }
+    }
+  },
+  "sources": {
+    "enabled": [
+      "amadeus",
+      "kiwi",
+      "google-flights",
+      "skyscanner",
+      "kayak",
+      "momondo"
+    ],
+    "disabled": [
+      "cheapoair",
+      "hopper",
+      "secret-flying",
+      "skiplagged"
+    ],
+    "scraping": {
+      "headless": true,
+      "timeout": 30000,
+      "delayBetweenRequests": 2000,
+      "randomDelayRange": [1000, 5000],
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+    }
+  },
+  "email": {
+    "enabled": true,
+    "service": "gmail",
+    "from": "",
+    "recipient": "",
+    "sendOnDeal": true
+  },
+  "database": {
+    "path": "./data/flights.db"
+  },
+  "reporting": {
+    "enabled": true,
+    "path": "./reports",
+    "topDealsCount": 10,
+    "generateDaily": true
+  },
+  "dashboard": {
+    "enabled": true,
+    "path": "./docs",
+    "updateFrequency": "every-run",
+    "showTrendDays": 7
+  }
+}
