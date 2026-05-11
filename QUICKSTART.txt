@@ -1,0 +1,112 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║          ✈️  INTERNATIONAL FLIGHT DEAL TRACKER - QUICK START              ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+WHAT IS THIS?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Automated flight deal tracker for your June 2026 trip.
+  Checks 6 sources every 4 hours. Alerts when prices drop.
+  Dashboard at GitHub Pages. Reports emailed daily.
+  Cost: $0 (completely free).
+
+SETUP: 4 EASY STEPS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. GET API KEYS (5 min)
+   ✓ Amadeus: https://developers.amadeus.com/register
+   ✓ Kiwi.com: https://tequila.kiwi.com/
+   ✓ Gmail app password: https://myaccount.google.com/apppasswords
+
+2. ADD GITHUB SECRETS (3 min)
+   Go: Settings → Secrets and variables → Actions
+   Add 5 secrets:
+     • AMADEUS_CLIENT_ID
+     • AMADEUS_CLIENT_SECRET
+     • KIWI_API_KEY
+     • EMAIL_USER
+     • EMAIL_PASSWORD
+
+3. ENABLE GITHUB PAGES (2 min)
+   Go: Settings → Pages
+   Source: GitHub Actions
+
+4. RUN FIRST WORKFLOW (30 sec)
+   Go: Actions → Flight Deal Tracker → Run workflow
+   Wait 2-5 minutes for first run.
+
+THAT'S IT! ✅
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Dashboard will auto-update every 4 hours.
+  Workflow runs automatically. No maintenance needed.
+
+DAILY USAGE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  1. Check dashboard: https://yourusername.github.io/repo-name/
+  2. Look for deals (green cards = below target price)
+  3. Click booking link to reserve
+
+CUSTOMIZE (Optional)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Edit config.json to:
+  • Change target prices
+  • Add/remove destinations
+  • Adjust date ranges
+  • Enable/disable email
+
+COMMANDS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  npm install              Install dependencies
+  npm run check            Run one-time search
+  npm run check:source X   Check only one source (X = amadeus, kiwi, etc)
+  npm run build-dashboard  Rebuild dashboard manually
+
+FEATURES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ✅ Searches 6 sources every 4 hours
+  ✅ Detects deals automatically
+  ✅ Email alerts with booking links
+  ✅ Live dashboard (mobile-friendly)
+  ✅ Daily markdown reports
+  ✅ Price history & trends
+  ✅ SQLite database persistence
+  ✅ 100% free (no payment ever)
+
+SOURCES CHECKED
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  • Amadeus API (airline pricing)
+  • Kiwi.com API (budget carriers)
+  • Google Flights (scraping)
+  • Skyscanner, Kayak, Momondo (stubs)
+
+TRIP DETAILS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Dates:       June 14-28, 2026 (flexible: Jun 12-30)
+  Origins:     BOS (Boston), MHT (Manchester)
+  Adults:      2
+  Destinations:
+    • Vietnam: SGN, HAN, DAD (target: $1100)
+    • Brazil: GIG, GRU, SSA, REC (target: $600-750)
+    • SE Asia: BKK, REP, DPS, MNL, KUL (target: $900-1100)
+
+DOCS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  README.md           Full feature documentation
+  SETUP.md            Complete API & GitHub setup guide
+  DEPLOYMENT.md       Quick deployment checklist
+  config.json         All configuration options
+
+SUPPORT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Workflow failing?    Check Actions tab → View logs
+  No flights found?    Verify airport codes (IATA format)
+  Dashboard not load?  Clear browser cache (Ctrl+Shift+R)
+  Email not working?   Check GitHub secrets are correct
+
+═══════════════════════════════════════════════════════════════════════════════
+
+                    Ready to find cheap flights? 
+            Follow the 4 steps above and you're done!
+
+                      Happy traveling! ✈️🌍
+
+═══════════════════════════════════════════════════════════════════════════════
