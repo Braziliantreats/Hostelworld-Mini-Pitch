@@ -4,33 +4,275 @@
       "name": "awesome-claude-skills",
       "description": "Comprehensive collection of 78+ practical Claude Skills for document processing, development tools, data analysis, marketing automation, and SaaS integrations",
       "source": "https://github.com/ComposioHQ/awesome-claude-skills",
-      "enabled": true
+      "enabled": true,
+      "category": "core"
     },
     {
       "name": "superpowers",
       "description": "Agentic skills framework for structured software development methodology with design specifications, test-driven development, and code review processes",
       "source": "https://github.com/obra/superpowers",
-      "enabled": true
+      "enabled": true,
+      "category": "core"
     },
     {
       "name": "anthropic-skills",
       "description": "Official Anthropic repository with example skills, specifications, templates, and production-grade document handling skills (DOCX, PDF, PPTX, XLSX)",
       "source": "https://github.com/anthropics/skills",
-      "enabled": true
+      "enabled": true,
+      "category": "core"
     },
     {
       "name": "notebooklm-skill",
       "description": "Enables Claude Code to query Google NotebookLM notebooks with source-grounded, citation-backed answers from Gemini",
       "source": "https://github.com/PleasePrompto/notebooklm-skill",
       "enabled": true,
+      "category": "core",
       "note": "Works only with local Claude Code installations, not in web UI"
     },
     {
       "name": "marketing-skills",
       "description": "45+ specialized marketing skills for conversion optimization, content & copy, SEO, paid advertising, analytics, retention, growth engineering, and strategy",
       "source": "https://github.com/coreyhaines31/marketingskills",
-      "enabled": true
+      "enabled": true,
+      "category": "core"
+    },
+    {
+      "name": "ui-design-brain",
+      "description": "60+ interface component patterns with best practices and design-system conventions for production-grade UI generation",
+      "source": "https://github.com/carmahhawwari/ui-design-brain",
+      "enabled": true,
+      "category": "frontend-design",
+      "stars": 788
+    },
+    {
+      "name": "ui-design-skill",
+      "description": "Design system with 99 UX rules, ~100 color palettes, 15 component patterns, WCAG contrast checker, and Lighthouse integration",
+      "source": "https://github.com/charlomrt-boop/ui-design-skill",
+      "enabled": true,
+      "category": "frontend-design"
+    },
+    {
+      "name": "senior-ui-ux",
+      "description": "Complete UI/UX design skill covering design systems, components, accessibility, and interaction patterns built with Next.js + Tailwind + shadcn/ui",
+      "source": "https://github.com/joaberibeiro-dot/senior-ui-ux",
+      "enabled": true,
+      "category": "frontend-design"
+    },
+    {
+      "name": "wcag-aaa-web-design",
+      "description": "WCAG 2.2 AAA accessible design system and AI agent skill for enterprise web applications with full component library and validation scripts",
+      "source": "https://github.com/simonplmak-cloud/wcag-aaa-web-design",
+      "enabled": true,
+      "category": "accessibility"
+    },
+    {
+      "name": "govuk-vue",
+      "description": "Vue 3 component library for GOV.UK Frontend and Design System - demonstrates accessible, well-documented design patterns",
+      "source": "https://github.com/govuk-vue/govuk-vue",
+      "enabled": true,
+      "category": "design-systems",
+      "stars": 182
+    },
+    {
+      "name": "material-design",
+      "description": "Web components built on Material 3 (Google's design system) for building beautiful and accessible web applications",
+      "source": "https://github.com/material-esm/material",
+      "enabled": true,
+      "category": "design-systems",
+      "stars": 174
+    },
+    {
+      "name": "a11y-patterns",
+      "description": "WCAG 2.1 AA accessibility pattern hub with per-pattern checklists, live code previews, and side-by-side comparisons of design systems (MUI, Radix UI, Ant Design)",
+      "source": "https://github.com/APA-labs/a11y",
+      "enabled": true,
+      "category": "accessibility"
+    },
+    {
+      "name": "tailwind-rails",
+      "description": "Tailwind CSS component patterns for Ruby on Rails with buttons, badges, cards, tables, and dark mode implementation",
+      "source": "https://github.com/djc00p/tailwind-rails",
+      "enabled": true,
+      "category": "css-frameworks"
+    },
+    {
+      "name": "design-workflow",
+      "description": "Research-to-design-to-code automation for product designers using Claude Skills + Figma MCP for structured workflows",
+      "source": "https://github.com/jrbrugger/design-workflow",
+      "enabled": true,
+      "category": "design-systems"
+    },
+    {
+      "name": "sira-design-system",
+      "description": "Customizable and accessible design system providing TailwindCSS component class names for building modern UI",
+      "source": "https://github.com/riazer-lab/sira",
+      "enabled": true,
+      "category": "design-systems",
+      "stars": 106
+    },
+    {
+      "name": "3d-portfolio",
+      "description": "3D animations, slick interactions, and cutting-edge design patterns with 3D effects and modern portfolio showcase",
+      "source": "https://github.com/Naresh-Khatri/3d-portfolio",
+      "enabled": true,
+      "category": "website-design",
+      "stars": 1073
+    },
+    {
+      "name": "outdoors-travel-template",
+      "description": "High-quality travel website template showcasing SaaS design, CSS3, responsive layouts, and advanced CSS patterns",
+      "source": "https://github.com/zain-bin-ramzan/OUTDOORS",
+      "enabled": true,
+      "category": "website-templates"
+    },
+    {
+      "name": "extra-strength-responsive-grids",
+      "description": "Fluid CSS Grid System for responsive web design with total control of flexible grid-based layouts",
+      "source": "https://github.com/johnpolacek/extra-strength-responsive-grids",
+      "enabled": true,
+      "category": "css-frameworks",
+      "stars": 254
+    },
+    {
+      "name": "axentix-css",
+      "description": "Modern CSS framework mixing fully customizable components with utility-first classes, grid, JavaScript, and UI components",
+      "source": "https://github.com/axentix/axentix",
+      "enabled": true,
+      "category": "css-frameworks",
+      "stars": 190
+    },
+    {
+      "name": "truus-awwwards",
+      "description": "Modern Awwwards-style interactive website with GSAP animations, creative UI interactions, and experimental layouts",
+      "source": "https://github.com/Thakuma07/Truus.co-Awwward-Website",
+      "enabled": true,
+      "category": "website-design",
+      "stars": 77
+    },
+    {
+      "name": "design-system-variables",
+      "description": "Comprehensive design variables system for grid, layout, media queries, responsive design, typography, and colors",
+      "source": "https://github.com/thierryc/Design-System-Variables",
+      "enabled": true,
+      "category": "design-systems"
+    },
+    {
+      "name": "jsam-responsive",
+      "description": "Lightweight CSS framework for responsive web layouts with grid systems, flex utilities, and visibility controls",
+      "source": "https://github.com/Hesam-Okati/JSAM-RESPONSIVE",
+      "enabled": true,
+      "category": "css-frameworks"
+    },
+    {
+      "name": "nexter-luxury-grid",
+      "description": "Responsive modern grid-based layout system with simplicity and elegance featuring advanced CSS Grid patterns",
+      "source": "https://github.com/al-rasels/nexter-luxury-grid-template",
+      "enabled": true,
+      "category": "website-templates"
+    },
+    {
+      "name": "proteo-ecommerce",
+      "description": "Sleek modern e-commerce theme with Gutenberg-friendly design perfect for learning WooCommerce UI patterns",
+      "source": "https://github.com/yithemes/yith-proteo",
+      "enabled": true,
+      "category": "ecommerce"
+    },
+    {
+      "name": "shopping-angular-ecommerce",
+      "description": "Apple Store-inspired e-commerce built with Angular 17 and Material/Bootstrap for learning modern e-commerce patterns",
+      "source": "https://github.com/thisalireza/shopping-angular",
+      "enabled": true,
+      "category": "ecommerce"
+    },
+    {
+      "name": "ibm-design-animations",
+      "description": "IBM Design Language animation guidelines with JavaScript-based animations for important interactions",
+      "source": "https://github.com/IBM-Design/web-animations",
+      "enabled": true,
+      "category": "animation",
+      "stars": 141
+    },
+    {
+      "name": "interaction-design-playground",
+      "description": "Web interactions and animations playground for learning and improving interaction design skills",
+      "source": "https://github.com/Astrae-Design/Interaction-Design",
+      "enabled": true,
+      "category": "animation"
+    },
+    {
+      "name": "portfolio-grid-layout",
+      "description": "Modern portfolio website featuring clean grid layout, smooth scroll animations, and responsive design",
+      "source": "https://github.com/SergeGod/Portfolio-Website",
+      "enabled": true,
+      "category": "website-templates"
+    },
+    {
+      "name": "responsive-landing-page",
+      "description": "Fully responsive landing page with flexible grid system and mobile-friendly design using HTML and CSS",
+      "source": "https://github.com/mqkhan125/Responsive-Landing-page",
+      "enabled": true,
+      "category": "website-templates"
+    },
+    {
+      "name": "css-grid-properties",
+      "description": "Demonstrates fully responsive layout using CSS Grid with dynamic adjustments based on screen size",
+      "source": "https://github.com/Asif0035/CSS_Grid_Properties",
+      "enabled": true,
+      "category": "css-frameworks"
+    },
+    {
+      "name": "grid-api-state-farm",
+      "description": "Responsive grid system without confined column limits with only 115 lines of code for powerful grid functionality",
+      "source": "https://github.com/StateFarmInsurance/Grid-API",
+      "enabled": true,
+      "category": "css-frameworks"
+    },
+    {
+      "name": "frogx-component",
+      "description": "Modern responsive React + Tailwind component with grid layout, gradient background, and hover effects",
+      "source": "https://github.com/radwan503/FrogX",
+      "enabled": true,
+      "category": "design-systems"
+    },
+    {
+      "name": "bento-grid-portfolio",
+      "description": "Modern portfolio with Next.js 16, Tailwind CSS v4, and Supabase featuring responsive Bento Grid layout and dark mode",
+      "source": "https://github.com/ilramdhan/meespace.dev",
+      "enabled": true,
+      "category": "website-templates"
+    },
+    {
+      "name": "berry-css",
+      "description": "Utility-first CSS framework with full Material Design support - atomic CSS approach better than Bootstrap",
+      "source": "https://github.com/maxsite/berry",
+      "enabled": true,
+      "category": "css-frameworks"
+    },
+    {
+      "name": "gridi-grid-system",
+      "description": "Utility-first CSS framework for responsive sites with flex, grid, and mobile-first design patterns",
+      "source": "https://github.com/valmisson/gridi",
+      "enabled": true,
+      "category": "css-frameworks"
+    },
+    {
+      "name": "gcds-css-shortcuts",
+      "description": "GC Design System CSS Shortcuts utility framework matching Canada.ca standards for government web design",
+      "source": "https://github.com/cds-snc/gcds-css-shortcuts",
+      "enabled": true,
+      "category": "design-systems"
     }
   ],
-  "defaultSkill": "awesome-claude-skills"
+  "defaultSkill": "awesome-claude-skills",
+  "categories": {
+    "core": "Core productivity and workflow skills",
+    "frontend-design": "Frontend UI and component design skills",
+    "design-systems": "Complete design systems and component libraries",
+    "website-design": "Modern website design patterns and showcases",
+    "website-templates": "Ready-to-use website templates and layouts",
+    "ecommerce": "E-commerce specific UI patterns and templates",
+    "css-frameworks": "CSS frameworks and grid systems",
+    "animation": "Animation and interaction design libraries",
+    "accessibility": "Accessibility standards and WCAG compliance skills"
+  }
 }
