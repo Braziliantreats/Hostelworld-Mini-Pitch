@@ -45,14 +45,14 @@
   },
   "sources": {
     "enabled": [
-      "amadeus",
-      "kiwi",
       "google-flights",
       "skyscanner",
       "kayak",
       "momondo"
     ],
     "disabled": [
+      "amadeus",
+      "kiwi",
       "cheapoair",
       "hopper",
       "secret-flying",
